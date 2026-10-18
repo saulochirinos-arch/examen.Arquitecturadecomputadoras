@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block titulo %}Analizador de representación de datos{% endblock %}</title>
+  {% include "datos/_estilos.html" %}
+</head>
+<body>
+  <header>
+    <h1>Analizador de representación de datos</h1>
+    <p>Sistemas numéricos y codificación de caracteres (UTF-8).</p>
+  </header>
+
+  <main>
+    {% block contenido %}{% endblock %}
+  </main>
+
+  <footer>Aplicación sin estado: no guarda datos. Python 3.12 · Django</footer>
+</body>
+</html>

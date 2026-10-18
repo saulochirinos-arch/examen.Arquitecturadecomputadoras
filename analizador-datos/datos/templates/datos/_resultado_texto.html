@@ -1,0 +1,21 @@
+<h3 class="ok">Resultado ({{ filas|length }} carácter{{ filas|length|pluralize:"es" }})</h3>
+<div class="tabla-scroll">
+  <table>
+    <thead>
+      <tr>
+        <th>Carácter</th><th>Decimal</th><th>Punto de código</th><th>Hexadecimal</th><th>Bytes UTF-8</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for f in filas %}
+      <tr>
+        <td class="car">{{ f.visible }}</td>
+        <td class="mono">{{ f.decimal }}</td>
+        <td class="mono">{{ f.punto_codigo }}</td>
+        <td class="mono">{{ f.hexadecimal }}</td>
+        <td class="mono">{{ f.bytes_utf8 }} <small>({{ f.cantidad_bytes }} byte{{ f.cantidad_bytes|pluralize }})</small></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

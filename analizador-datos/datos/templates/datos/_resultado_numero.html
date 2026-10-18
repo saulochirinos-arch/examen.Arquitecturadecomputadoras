@@ -1,0 +1,12 @@
+<h3 class="ok">Resultado</h3>
+<table>
+  <tr><th scope="row">Decimal</th><td class="mono">{{ resultado.decimal }}</td></tr>
+  <tr>
+    <th scope="row">Binario ({{ resultado.bytes_necesarios }} byte{{ resultado.bytes_necesarios|pluralize }} = {{ resultado.binario|length }} bits)</th>
+    <td class="mono">{{ resultado.binario }}</td>
+  </tr>
+  <tr><th scope="row">Octal</th><td class="mono">{{ resultado.octal }}</td></tr>
+  <tr><th scope="row">Hexadecimal</th><td class="mono">{{ resultado.hexadecimal }}</td></tr>
+  <tr><th scope="row">Bits significativos</th><td>{{ resultado.bits_significativos }}</td></tr>
+  <tr><th scope="row">Bytes necesarios</th><td>{{ resultado.bytes_necesarios }}</td></tr>
+</table>
